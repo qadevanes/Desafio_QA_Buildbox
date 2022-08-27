@@ -5,6 +5,7 @@ context('Testes de funcionalidade cadastro bugereats', () => {
     
     it('Cadastro válido', () => {
     cy.visit('https://buger-eats.vercel.app/')
+    cy.viewport(1440, 900)
     cy.get('a').click()
     cy.get(':nth-child(2) > :nth-child(2) > :nth-child(1) > input').type('Adevanes Thiago')
     cy.get(':nth-child(2) > :nth-child(2) > :nth-child(2) > input').type('01829747070')
@@ -15,10 +16,10 @@ context('Testes de funcionalidade cadastro bugereats', () => {
     cy.get(':nth-child(4) > :nth-child(1) > input').type('92')
     cy.get(':nth-child(4) > :nth-child(2) > input').type('casa')
     cy.get('.delivery-method > :nth-child(2)').click()
-    cy.get('p').selectFile('input type="file"')
-    //cy.get('.button-success').click()
-    
-
+    const fixtureFile = 'cnh.jpg';
+    const fileInputElement = ".dropzone";
+    cy.get(fileInputElement).attachFile(fixtureFile)
+    cy.get('.button-success').click() 
 
 });
 
