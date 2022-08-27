@@ -4,7 +4,8 @@
   "description": "Desafios propostos para vaga de analista de qualidade",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "cy:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/programadornovato2021/Desafio_QA_Buildbox/issues"
   },
-  "homepage": "https://github.com/programadornovato2021/Desafio_QA_Buildbox#readme"
+  "homepage": "https://github.com/programadornovato2021/Desafio_QA_Buildbox#readme",
+  "devDependencies": {
+    "cypress": "^9.3.0"
+  },
+  "dependencies": {
+    "cypress-file-upload": "^5.0.8"
+  }
 }
