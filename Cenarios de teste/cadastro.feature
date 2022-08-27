@@ -1,7 +1,7 @@
 #language: pt
 
 Funcionalidade: Cadastrar
-Como novo parceiro da Burger Eats
+Como novo parceiro da BurgerEats
 Quero me cadastrar
 Para ter acesso as oportunidades de entrega tradicionais
 
