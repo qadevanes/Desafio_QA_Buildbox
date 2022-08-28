@@ -30,6 +30,11 @@ Dado que acesso a página de cadastro
 Quando submeto o meu cadastro com um CPF inválido
 Então deve exibir uma mensagem de alerta: "Oops! CPF inválido"
 
+Cenário: CPF existente
+Dado que acesso a página de cadastro
+Quando submeto o meu cadastro com um CPF existente
+Então deve exibir uma mensagem de alerta: "Oops! CPF já existente"
+
 Cenário: E-mail inválido
 Dado que acesso a página de cadastro
 Quando submeto o meu cadastro com um e-mail inválido
@@ -44,4 +49,29 @@ Cenário: whatsapp com numero inválido
 Dado que acesso a página de cadastro
 Quando submeto o meu cadastro com numero inválido
 Então deve exibir uma mensagem de alerta: "Oops! Whatsapp com formato incorreto"
+
+Cenário: CEP input vázio
+Dado que acesso a página de cadastro
+Quando submeto o meu cadastro sem digitar meu CEP
+Então deve exibir uma mensagem de alerta: "É necessário informar o CEP"
+
+Cenário: endereço com numero input vázio
+Dado que acesso a página de cadastro
+Quando submeto o meu cadastro sem digitar o numero do meu endereço
+Então deve exibir uma mensagem de alerta: "É necessário informar o número do endereço"
+
+Cenário: Metódo de entrega não selecionado
+Dado que acesso a página de cadastro
+Quando submeto o meu cadastro sem selecionar o método de entrega
+Então deve exibir uma mensagem de alerta: "Selecione o método de entrega"
+
+Cenário: Metódo de entrega seleção multipla
+Dado que acesso a página de cadastro
+Quando submeto o meu cadastro selecionando mais de um método de entrega
+Então deve exibir uma mensagem de alerta: "Oops! Selecione apenas um método de entrega"
+
+Cenário: upload de documendo
+Dado que acesso a página de cadastro
+Quando submeto o meu cadastro sem adicionar meu documento
+Então deve exibir uma mensagem de alerta: "Adicione uma foto da sua CNH"
 
