@@ -41,3 +41,7 @@ npx cypress open
 
 Dentro da pasta , temos um arquivo com todas as ações de teste dos cenários criados, exemplo podemos mudar o tamanho para mobile ao qual vamos testar todos os cenarios.
 
+
+observação:
+- Responsividade para telas menores , não são compativeis para usuario nesse projeto.
+
